@@ -192,18 +192,21 @@ document.addEventListener("DOMContentLoaded", () => {
             listaCarrito.appendChild(itemCarrito);
         });
     
-    // Actualiza el número de productos en el carrito
+        // Actualiza el número de productos en el carrito
         const numeritoCarrito = document.querySelector(".numerito");
         numeritoCarrito.textContent = carritoProductos.length;
     
-    // Muestra u oculta el mensaje de carrito vacío
+        // Verifica si el carrito está vacío y muestra u oculta el mensaje correspondiente
+        const carritoVacio = document.getElementById("carrito-vacio");
         if (carritoProductos.length === 0) {
             productosCarrito.style.display = "none";
+            carritoVacio.style.display = "block";
         } else {
             productosCarrito.style.display = "block";
+            carritoVacio.style.display = "none";
         }
     
-    // Agregar un evento para eliminar productos del carrito
+        // Evento para eliminar productos del carrito
         const botonesEliminar = document.querySelectorAll(".btn-eliminar");
         botonesEliminar.forEach((boton) => {
             boton.addEventListener("click", (event) => {
@@ -211,13 +214,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 const indiceProducto = carritoProductos.findIndex((producto) => producto.id === productoId);
                 if (indiceProducto !== -1) {
                     carritoProductos.splice(indiceProducto, 1);
-                    actualizarVistaCarrito();
-    
-    // Actualizar el carrito en localStorage al eliminar un producto
+                    // Actualizar el carrito en localStorage al eliminar un producto
                     localStorage.setItem('carrito', JSON.stringify(carritoProductos));
+                    actualizarVistaCarrito(); // Volver a actualizar la vista después de eliminar
                 }
             });
         });
     }
-});
-
+})
