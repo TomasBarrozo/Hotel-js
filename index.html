@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel posada las lengas</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+   <!-- header -->
+
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i> Hotel Posada las Lengas</a>
+
+      <nav class="navbar">
+         <a href="./index.html">Inicio</a>
+         <a href="#acercade">Información</a>
+         <a href="#habitaciones">Habitaciones</a>
+         <a href="#reseñas">Reseñas</a>
+         <a href="#faq">Preguntas frecuentes</a>
+         <a id="boton-carrito" href="#">
+            <i class="fas fa-shopping-cart"></i> Carrito <span class="numerito">0</span></a>
+         <div id="vista-carrito" class="vista-carrito">
+            <div class="contenido-carrito">
+                  <h2>Carrito de Compras</h2>
+                  <ul id="productos-carrito">
+                     <!-- Los productos agregados se mostrarán acá -->
+                  </ul>
+                  <p id="carrito-vacio">El carrito está vacío</p>
+                  <button id="cerrar-carrito" class="btn-cerrar">Cerrar</button>
+               </div>
+         </div>
+
+      </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+
+   </header>
+
+
+   <!-- Inicio -->
+
+   <section class="inicio" id="inicio">
+
+      <div class="swiper inicio-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/bienvenidos00.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Hotel Posada Las Lengas, tu lugar</h3>
+                  <a href="#habitaciones" class="btn"> Quiero reservar</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/hotel-entrada.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Hotel Posada Las Lengas, tu lugar</h3>
+                  <a href="#habitaciones" class="btn"> Quiero reservar</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/28.png) no-repeat;">
+               <div class="content">
+                  <h3>Hotel Posada Las Lengas, tu lugar</h3>
+                  <a href="#habitaciones" class="btn"> Quiero reservar</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   <!-- acerca de -->
+
+   <section class="acercade" id="acercade">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/28deNoviembre.jpg" alt="">
+         </div>
+
+         <div class="content">
+            <h3>Acerca de nosotros</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nesciunt blanditiis maxime natus repudiandae veritatis alias laboriosam neque cum! Est adipisci assumenda, ad debitis iusto laudantium repellat aliquam dolore voluptates.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nesciunt blanditiis maxime natus repudiandae veritatis alias laboriosam neque cum! Est adipisci assumenda, ad debitis iusto laudantium repellat aliquam dolore voluptates.</p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- habitaciones -->
+
+   <section class="habitaciones" id="habitaciones">
+   
+   <h1 class="titulos">Nuestras habitaciones</h1>
+
+   <div class="swiper habitaciones-slider">
+
+      <div id="contenedor-productos" class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <span class="price">desde 25000$ por noche</span>
+               <img src="images/ind.jpg" alt="">
+               <a href="#" class="fas fa-shopping-cart" data-room-id="habitacion-01"></a>
+            </div>
+            <div class="content">
+               <h3>Habitación Individual</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <a href="#" class="btn" data-room-id="habitacion-01">Reservar ahora</a>
+            </div>
+         </div>
+         
+         <div class="swiper-slide slide">
+            <div class="image">
+               <span class="price">desde 28000$ por noche</span>
+               <img src="images/ind sup.jpg" alt="">
+               <a href="#" class="fas fa-shopping-cart" data-room-id="habitacion-02"></a>
+            </div>
+            <div class="content">
+               <h3>Habitación individual superior</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <a href="#" class="btn"  data-room-id="habitacion-02">Reservar ahora</a>
+            </div>
+         </div>
+         
+         <div class="swiper-slide slide">
+            <div class="image">
+               <span class="price">desde 30000$ por noche</span>
+               <img src="images/doble.jpg" alt="">
+               <a href="#" class="fas fa-shopping-cart" data-room-id="habitacion-03"></a>
+            </div>
+            <div class="content">
+               <h3>Habitación doble</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <a href="#" class="btn" data-room-id="habitacion-03" >Reservar ahora</a>
+            </div>
+         </div>
+         
+         <div class="swiper-slide slide">
+            <div class="image">
+               <span class="price">Desde 35000$ por noche </span>
+               <img src="images/triple.jpg" alt="">
+               <a href="#" class="fas fa-shopping-cart" data-room-id="habitacion-04" ></a>
+            </div>
+            <div class="content">
+               <h3>Habitación triple</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <a href="#" class="btn" data-room-id="habitacion-04" >Reservar ahora</a>
+            </div>
+         </div>
+         
+         <div class="swiper-slide slide">
+            <div class="image">
+               <span class="price">desde 37000$ por noche</span>
+               <img src="images/triple-sup.jpg" alt="">
+               <a href="#" class="fas fa-shopping-cart" data-room-id="habitacion-05" ></a>
+            </div>
+            <div class="content">
+               <h3>Habitación triple superior</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <a href="#" class="btn" data-room-id="habitacion-05" >Reservar ahora</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+   <!-- Galeria -->
+
+   <section class="galeria" id="galeria">
+
+      <h1 class="titulos">Nuestra galeria</h1>
+
+      <div class="swiper galeria-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <img src="images/delivery.jpg" alt="Foto de la comida del hotel">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/hotel.jpg" alt="Foto del hotel">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/info.jpg" alt="Foto del hotel">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/bien.jpg" alt="Foto del hotel">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/28.jpg" alt="Foto del restaurante">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/restaurante.jpg" alt="Foto de la localidad">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+
+   <!-- Reseñas -->
+
+   <section class="reseñas" id="reseñas">
+
+      <div class="swiper reseñas-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <h2 class="titulos">Reseñas de nuestros clientes</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+               <div class="user">
+                  <img src="images/pic-1.png" alt="">
+                  <div class="user-info">
+                     <h3>Marcos</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="titulos">Reseñas de nuestros clientes</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+               <div class="user">
+                  <img src="images/pic-2.png" alt="">
+                  <div class="user-info">
+                     <h3>Julieta</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="titulos">Reseñas de nuestros clientes</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+               <div class="user">
+                  <img src="images/pic-3.png" alt="">
+                  <div class="user-info">
+                     <h3>Francisco</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="titulos">Reseñas de nuestros clientes</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+               <div class="user">
+                  <img src="images/pic-4.png" alt="">
+                  <div class="user-info">
+                     <h3>Mariela</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+
+   </section>
+
+   <!-- Faq -->
+
+   <section class="faqs" id="faq">
+
+      <h1 class="titulos">Preguntas frecuentes</h1>
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/FAQs.gif" alt="">
+         </div>
+
+         <div class="content">
+
+            <div class="box active">
+               <h3>¿Donde está ubicado Hotel Posada las Lengas?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+            </div>
+
+            <div class="box">
+               <h3>¿Cúales son los horarios de check in y de check out?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+            </div>
+
+            <div class="box">
+               <h3>¿Qué servicios ofrece?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+            </div>
+
+            <div class="box">
+               <h3>¿Cuenta con restaurant?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+            </div>
+
+            <div class="box">
+               <h3>¿Cúales son los medios de pago aceptados?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- Consultas -->
+
+   <section class="consultas" id="consultas">
+
+      <h1 class="titulos">¿Tienes alguna pregunta?</h1>
+
+      <form id="consulta-form" action="">
+
+         <div class="container">
+
+            <div class="box">
+               <p>Nombre <span>*</span></p>
+               <input type="text" class="input" placeholder="Su nombre">
+            </div>
+
+            <div class="box">
+               <p>Apellido <span>*</span></p>
+               <input type="text" class="input" placeholder="Su Apellido">
+            </div>
+
+            <div class="box">
+               <p>Nacionalidad <span>*</span></p>
+               <input type="text" class="input" placeholder="Su nacionalidad">
+            </div>
+
+
+            <div class="box">
+               <p>E-mail <span>*</span></p>
+               <input type="text" class="input" placeholder="Su correo electrónico">
+            </div>
+
+            <div class="box">
+               <p>Número de celular <span>*</span></p>
+               <input type="text" class="input" placeholder="Su número de celular">
+            </div>
+
+
+            <div class="box">
+               <p>Motivo de consulta <span>*</span></p>
+               <select name="rooms" id="" class="input">
+                  <option value="1">Hospedaje</option>
+                  <option value="2">Habitaciones</option>
+                  <option value="3">Restaurant</option>
+                  <option value="4">Medios de pago</option>
+                  <option value="5">Otros</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>Consulta <span>*</span></p>
+               <textarea class="input" name="consulta" placeholder="Escribe tu consulta aquí"></textarea>
+            </div>
+
+   
+         </div>
+
+         <input type="submit" value="Enviar consulta" class="btn">
+
+      </form>
+
+   </section>
+
+   <!-- Footer -->
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>Información de contacto</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +54 2966622805 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +54 02902482373</a>
+            <a href="#"> <i class="fas fa-envelope"></i> PININOAB@HOTMAIL.COM</a>
+            <a href="#"> <i class="fas fa-map"></i> 28 de Noviembre, Santa Cruz, Argentina</a>
+         </div>
+
+         <div class="box">
+            <h3>Links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Inicio</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Información</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Habitaciones</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Galeria</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Reservar</a>
+         </div>
+
+         <div class="box">
+            <h3>Servicios de pago</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Excursiones</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Transporte</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Lavanderia</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Traslados al aeropuerto</a>
+         </div>
+
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-whatsapp"></a>
+      </div>
+
+      <div class="credit">&copy; Hotel posada las lengas </div>
+
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+   <script src="js/main.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+

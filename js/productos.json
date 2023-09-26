@@ -1,0 +1,53 @@
+[
+    {
+        "id": "habitacion-01",
+        "titulo": "Habitación individual",
+        "imagen": "./images/ind.jpg",
+        "categoria": {
+            "nombre": "habitaciones",
+            "id": "habitaciones"
+        },
+        "precio": 25000
+    },
+    {
+        "id": "habitacion-02",
+        "titulo": "Habitación individual superior",
+        "imagen": "./images/ind sup.jpg",
+        "categoria": {
+            "nombre": "habitaciones",
+            "id": "habitaciones"
+        },
+        "precio": 28000
+    },
+    {
+        "id": "habitacion-03",
+        "titulo": "Habitación doble",
+        "imagen": "./images/doble.jpg",
+        "categoria": {
+            "nombre": "habitaciones",
+            "id": "habitaciones"
+        },
+        "precio": 30000
+    },
+    {
+        "id": "habitacion-04",
+        "titulo": "Habitación triple",
+        "imagen": "./images/triple.jpg",
+        "categoria": {
+            "nombre": "habitaciones",
+            "id": "habitaciones"
+        },
+        "precio": 35000
+    },
+    {
+        "id": "habitacion-05",
+        "titulo": "Habitación triple superior",
+        "imagen": "./images/triple-sup.jpg",
+        "categoria": {
+            "nombre": "habitaciones",
+            "id": "habitaciones"
+        },
+        "precio": 37000
+
+    }
+]
